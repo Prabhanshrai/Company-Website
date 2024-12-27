@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumeru</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="./src/output.css" rel="stylesheet">
+   
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+   
+</head>
+<body>
+    <header class="header flex justify-between items-center px-4 shadow-md">
+        <a href="#">
+            <img class="w-20" src="./images/logo1.png" alt="">
+        </a>
+        
+        <nav class="hidden lg:flex space-x-14 ">
+            <ul class="flex justify-center items-center space-x-14 ">
+                <li><a href="Index.html" class=" text-xl uppercase">Home</a></li>
+                <li><a href="About.html" class=" text-xl uppercase">About</a></li>
+                <li><a href="Services.html" class=" text-xl uppercase">Services</a></li>
+                <li><a href="Insights.html" class=" text-xl uppercase">Insi</a></li>
+                <li><a href="Careers.html" class=" text-xl uppercase">Careers</a></li>
+                <li><a href="Contact.html" class=" text-xl uppercase">Contact Us</a></li>
+            </ul>
+        </nav>
+    
+        <button class="lg:hidden" id="menu-toggle" aria-label="Toggle navigation menu">
+            <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+            <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+    
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="hidden bg-white shadow-md absolute top-16 right-0 w-full lg:hidden">
+            <ul class="flex flex-col space-y-2 p-4">
+                <li><a href="Index.html" class=" text-md uppercase">Home</a></li>
+                <li><a href="About.html" class=" text-md uppercase">About</a></li>
+                <li><a href="Services.html" class=" text-md uppercase">Services</a></li>
+                <li><a href="Insights.html" class=" text-md uppercase">Insights</a></li>
+                <li><a href="Careers.html" class=" text-md uppercase">Careers</a></li>
+                <li><a href="Contact.html" class=" text-md uppercase">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+      
+      
+      <!-- Script placed just before the closing body tag -->
+     
+      
+    <section id="home" class="home">
+        <h1 class="">Welcome to Sumeru Global</h1>
+        <h2 class="animate-slidein1200">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, aspernatur?</h2>
+        
+        <!-- Arrow Keys -->
+        <div class="arrow left-arrow" onclick="previousImage()">&#9664;</div>
+        <div class="arrow right-arrow" onclick="nextImage()">&#9654;</div>
+      
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+      </section>
+
+
+
+      <div class="intro flex flex-col sm:flex-row justify-center items-center">
+        <div>
+            <img class="indeximg slideinFromLeft" src="./images/aboutus.png" alt="">
+        </div>
+        <p class="slideinFromRight" style="font-size:2rem; ">
+            Lorem ipsum dolor sit amet, consectetur <span>adipisicing elit</span>. Itaque dignissimos placeat error dolorum omnis similique dicta doloribus quas doloremque, quibusdam eos amet impedit, <span>mollitia accusamus?</span>
+        </p>
+    </div>
+    
+
+  </div>
+
+  <div class="Offices flex flex-col sm:flex-row" >
+    <div class="text-section">
+        <h1>Our offices</h1>
+        <h2>Banglore</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid facilis quam, architecto fugiat illum alias harum! Dignissimos adipisci, sunt ad consectetur rerum quibusdam distinctio iusto.</p>
+        <h2>Mumbai</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At doloribus sit, consequatur quaerat fugit illo labore temporibus quasi!</p>
+    </div>
+    <div class="image-section">
+        <img src="./images/offices3.jpeg" alt="Woman with Document">
+    </div>
+    
+</div>
+
+
+<section class="form-section">
+    <div class="form-container">
+        <div class="form-left">
+            <h2 class="text-2xl">How did you hear about us?</h2>
+            <form>
+                <div class="form-group">
+                    <label for="first-name">Full name*</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <!-- <div class="form-group">
+                    <label for="last-name">Last name*</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div> -->
+                <div class="form-group">
+                    <label for="email">E-mail*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number*</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message*</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button class="formbutton" type="submit">SUBMIT</button>
+            </form>
+        </div>
+        <div class="form-right">
+            <img src="./images/about4.jpg" alt="Form Image">
+        </div>
+    </div>
+</section>
+
+
+
+
+<div class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="row-2">
+                    <div class="image12">
+                        <img src="./images/logo1.png" alt="">
+                    </div>
+                <div class="col-lg-3 col-md-6  footer-links">
+                    <h4 class="">About Us</h4>
+                    <ul>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="#">Home</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="About.html">About us</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="Services.html">Our services</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="#">Staffing</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="#">Startup Service</a></li>
+                        <li><i class="ion-ios-arrow-forward"></i> <a href="#">Careers</a></li>
+                    </ul>
+                </div>
+
+            
+                <div class="col-lg-3 col-md-6 footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>
+                        1300 Center Avenue<br>
+                        Fresno, California<br>
+                        United States <br>
+                        <strong>Phone:</strong> +123-456-7890<br>
+                        <strong>Email:</strong> info@example.com<br>
+                    </p>
+
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="ion-logo-facebook"></i></a>
+                        <a href="https://twitter.com/login?lang=en"><i class="ion-logo-twitter"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="ion-logo-linkedin"></i></a>
+                        <a href="https://www.instagram.com/"><i class="ion-logo-instagram"></i></a>
+                        <a href="https://accounts.google.com/servicelogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i class="ion-logo-googleplus"></i></a>
+                    </div>
+
+                </div>
+            </div>
+         </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
